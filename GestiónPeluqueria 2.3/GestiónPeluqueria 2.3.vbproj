@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C85858D-884D-4745-BB30-FB418B56AFE9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GestiónPeluqueria_2._3.My.MyApplication</StartupObject>
+    <RootNamespace>GestiónPeluqueria_2._3</RootNamespace>
+    <AssemblyName>GestiónPeluqueria 2.3</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GestiónPeluqueria 2.3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GestiónPeluqueria 2.3.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almacen.Designer.vb">
+      <DependentUpon>Almacen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Almacen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Añadir Cliente.Designer.vb">
+      <DependentUpon>Añadir Cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Añadir Cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirCita.Designer.vb">
+      <DependentUpon>AñadirCita.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirCita.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirPedido.Designer.vb">
+      <DependentUpon>AñadirPedido.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirPedido.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirProducto.Designer.vb">
+      <DependentUpon>AñadirProducto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirProducto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirProveedor.Designer.vb">
+      <DependentUpon>AñadirProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirServicio.Designer.vb">
+      <DependentUpon>AñadirServicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AñadirServicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Conexion.vb" />
+    <Compile Include="GestiónPeluqueria.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestiónPeluqueria.Designer.vb">
+      <DependentUpon>GestiónPeluqueria.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Pedidos.Designer.vb">
+      <DependentUpon>Pedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Proveedores.Designer.vb">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Servicios.Designer.vb">
+      <DependentUpon>Servicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver Clientes.Designer.vb">
+      <DependentUpon>Ver Clientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ver Clientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Almacen.resx">
+      <DependentUpon>Almacen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Añadir Cliente.resx">
+      <DependentUpon>Añadir Cliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirCita.resx">
+      <DependentUpon>AñadirCita.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirPedido.resx">
+      <DependentUpon>AñadirPedido.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirProducto.resx">
+      <DependentUpon>AñadirProducto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirProveedor.resx">
+      <DependentUpon>AñadirProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirServicio.resx">
+      <DependentUpon>AñadirServicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestiónPeluqueria.resx">
+      <DependentUpon>GestiónPeluqueria.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos.resx">
+      <DependentUpon>Pedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proveedores.resx">
+      <DependentUpon>Proveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Servicios.resx">
+      <DependentUpon>Servicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver Clientes.resx">
+      <DependentUpon>Ver Clientes.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
